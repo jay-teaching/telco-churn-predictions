@@ -9,7 +9,12 @@
                 "python.testing.pytestArgs": ["tests"],
                 "python.testing.unittestEnabled": false,
                 "python.testing.pytestEnabled": true,
-                "python.defaultInterpreterPath": ".venv/bin/python"
+                "python.defaultInterpreterPath": ".venv/bin/python",
+                "git.confirmSync": false,
+                "git.postCommitCommand": "sync",
+                "git.autofetch": true,
+                "git.useEditorAsCommitInput": false,
+                "git.rebaseWhenSync": true
             }
         }
     },
