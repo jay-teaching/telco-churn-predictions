@@ -1,0 +1,23 @@
+[project]
+name = "telco-churn-predictions"
+version = "0.1.0"
+description = "Predicting churn in a telco"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "joblib>=1.6.0",
+    "marimo>=0.25.2",
+    "pandas>=3.1.0",
+    "scikit-learn>=1.9.1",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]
+
+[tool.ruff.lint]
+# Ruff 0.16 switched on hundreds of extra rules by default, and many of them flag
+# code that marimo writes itself (such as the `return` at the end of every cell).
+# This keeps the rule set this course was written for.
+select = ["E4", "E7", "E9", "F"]
